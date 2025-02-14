@@ -16,4 +16,4 @@
 2.set crontab to exec startup-ec2.sh and stop-ec2.sh
 
 # Architecture diagram
-![d4runpy.png](https://github.com/Jm-afzzz/myPub/blob/main/Py%20web-crawler%20by%20Docker/d4runpy.png)
+![d4runpy.png](https://github.com/Jm-afzzz/myPub/blob/main/Dockerize_Py_Web-crawler/d4runpy.png)
