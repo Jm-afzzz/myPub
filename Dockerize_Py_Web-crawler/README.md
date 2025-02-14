@@ -3,7 +3,7 @@
 
 2.add Dockerfile to the goal dir on your host(EC2)
 
-3.run build_push_img.sh
+3.run Build_Push_Img.sh
 
 # Create AWS Runner EC2s
 1.add ec2templ.sh when you launch EC2 instances with User data input
