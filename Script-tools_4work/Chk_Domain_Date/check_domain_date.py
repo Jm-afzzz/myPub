@@ -14,7 +14,7 @@ def read_domain_names_from_file(file_path):
     domain_names = [domain.strip() for domain in domain_names]
     return domain_names
 
-file_path = "domainlist.txt"
+file_path = "domainlist"
 domain_names = read_domain_names_from_file(file_path)
 
 for domain_name in domain_names:
