@@ -1,0 +1,189 @@
+{
+    "WAP": {
+        "TYPE1_API_URLS": {
+            "vd002": "https://wap-api-002.example2.com/path1",
+            "vd003": "https://wap-api-003.example3.com/path1",
+            "vd004": "https://wap-api-004.example4.com/path1",
+            "vd006": "https://wap-api-006.example6.com/path1",
+            "vd007": "https://wap-api-007.example7.com/path1",
+            "vd008": "https://wap-api-008.example8.com/path1",
+            "vd009": "https://wap-api-009.example9.com/path1",
+            "vd010": "https://wap-api-010.example10.com/path1"
+        },
+        "TYPE1_WEBSOCKET_URLS": {
+            "vd002": "wss://wap-ws-002.example2.com/path1",
+            "vd003": "wss://wap-ws-003.example3.com/path1",
+            "vd004": "wss://wap-ws-004.example4.com/path1",
+            "vd006": "wss://wap-ws-006.example6.com/path1",
+            "vd007": "wss://wap-ws-007.example7.com/path1",
+            "vd008": "wss://wap-ws-008.example8.com/path1",
+            "vd009": "wss://wap-ws-009.example9.com/path1",
+            "vd010": "wss://wap-ws-010.example10.com/path1"
+        },
+        "TYPE2_API_URLS": {
+            "vd002": "https://wap-api-002.example2.com/path2",
+            "vd003": "https://wap-api-003.example3.com/path2",
+            "vd004": "https://wap-api-004.example4.com/path2",
+            "vd006": "https://wap-api-006.example6.com/path2",
+            "vd007": "https://wap-api-007.example7.com/path2",
+            "vd008": "https://wap-api-008.example8.com/path2",
+            "vd009": "https://wap-api-009.example9.com/path2",
+            "vd010": "https://wap-api-010.example10.com/path2"
+        },
+        "TYPE2_WEBSOCKET_URLS": {
+            "vd002": "wss://wap-ws-002.example2.com/path2",
+            "vd003": "wss://wap-ws-003.example3.com/path2",
+            "vd004": "wss://wap-ws-004.example4.com/path2",
+            "vd006": "wss://wap-ws-006.example6.com/path2",
+            "vd007": "wss://wap-ws-007.example7.com/path2",
+            "vd008": "wss://wap-ws-008.example8.com/path2",
+            "vd009": "wss://wap-ws-009.example9.com/path2",
+            "vd010": "wss://wap-ws-010.example10.com/path2"
+        },
+        "BE_URLS": {
+            "vd002": "https://wap-be-002.example2.com",
+            "vd003": "https://wap-be-003.example3.com",
+            "vd004": "https://wap-be-004.example4.com",
+            "vd006": "https://wap-be-006.example6.com",
+            "vd007": "https://wap-be-007.example7.com",
+            "vd008": "https://wap-be-008.example8.com",
+            "vd009": "https://wap-be-009.example9.com",
+            "vd010": "https://wap-be-010.example10.com"
+        },
+        "FE_URLS": {
+            "vd002": "https://wap-fe-002.example2.com",
+            "vd003": "https://wap-fe-003.example3.com",
+            "vd004": "https://wap-fe-004.example4.com",
+            "vd006": "https://wap-fe-006.example6.com",
+            "vd007": "https://wap-fe-007.example7.com",
+            "vd008": "https://wap-fe-008.example8.com",
+            "vd009": "https://wap-fe-009.example9.com",
+            "vd010": "https://wap-fe-010.example10.com"
+        }
+    },
+    "IOS": {
+        "TYPE1_API_URLS": {
+            "vd002": "https://ios-api-002.example2ios.com/path1",
+            "vd003": "https://ios-api-003.example3ios.com/path1",
+            "vd004": "https://ios-api-004.example4ios.com/path1",
+            "vd006": "https://ios-api-006.example6ios.com/path1",
+            "vd007": "https://ios-api-007.example7ios.com/path1",
+            "vd008": "https://ios-api-008.example8ios.com/path1",
+            "vd009": "https://ios-api-009.example9ios.com/path1",
+            "vd010": "https://ios-api-010.example10ios.com/path1"
+        },
+        "TYPE1_WEBSOCKET_URLS": {
+            "vd002": "wss://ios-ws-002.example2ios.com/path1",
+            "vd003": "wss://ios-ws-003.example3ios.com/path1",
+            "vd004": "wss://ios-ws-004.example4ios.com/path1",
+            "vd006": "wss://ios-ws-006.example6ios.com/path1",
+            "vd007": "wss://ios-ws-007.example7ios.com/path1",
+            "vd008": "wss://ios-ws-008.example8ios.com/path1",
+            "vd009": "wss://ios-ws-009.example9ios.com/path1",
+            "vd010": "wss://ios-ws-010.example10ios.com/path1"
+        },
+        "TYPE2_API_URLS": {
+            "vd002": "https://ios-api-002.example2ios.com/path2",
+            "vd003": "https://ios-api-003.example3ios.com/path2",
+            "vd004": "https://ios-api-004.example4ios.com/path2",
+            "vd006": "https://ios-api-006.example6ios.com/path2",
+            "vd007": "https://ios-api-007.example7ios.com/path2",
+            "vd008": "https://ios-api-008.example8ios.com/path2",
+            "vd009": "https://ios-api-009.example9ios.com/path2",
+            "vd010": "https://ios-api-010.example10ios.com/path2"
+        },
+        "TYPE2_WEBSOCKET_URLS": {
+            "vd002": "wss://ios-ws-002.example2ios.com/path2",
+            "vd003": "wss://ios-ws-003.example3ios.com/path2",
+            "vd004": "wss://ios-ws-004.example4ios.com/path2",
+            "vd006": "wss://ios-ws-006.example6ios.com/path2",
+            "vd007": "wss://ios-ws-007.example7ios.com/path2",
+            "vd008": "wss://ios-ws-008.example8ios.com/path2",
+            "vd009": "wss://ios-ws-009.example9ios.com/path2",
+            "vd010": "wss://ios-ws-010.example10ios.com/path2"
+        },
+        "BE_URLS": {
+            "vd002": "https://ios-be-002.example2ios.com",
+            "vd003": "https://ios-be-003.example3ios.com",
+            "vd004": "https://ios-be-004.example4ios.com",
+            "vd006": "https://ios-be-006.example6ios.com",
+            "vd007": "https://ios-be-007.example7ios.com",
+            "vd008": "https://ios-be-008.example8ios.com",
+            "vd009": "https://ios-be-009.example9ios.com",
+            "vd010": "https://ios-be-010.example10ios.com"
+        },
+        "FE_URLS": {
+            "vd002": "https://ios-fe-002.example2ios.com",
+            "vd003": "https://ios-fe-003.example3ios.com",
+            "vd004": "https://ios-fe-004.example4ios.com",
+            "vd006": "https://ios-fe-006.example6ios.com",
+            "vd007": "https://ios-fe-007.example7ios.com",
+            "vd008": "https://ios-fe-008.example8ios.com",
+            "vd009": "https://ios-fe-009.example9ios.com",
+            "vd010": "https://ios-fe-010.example10ios.com"
+        }
+    },
+    "AN": {
+        "TYPE1_API_URLS": {
+            "vd002": "https://an-api-002.example2an.com/path1",
+            "vd003": "https://an-api-003.example3an.com/path1",
+            "vd004": "https://an-api-004.example4an.com/path1",
+            "vd006": "https://an-api-006.example6an.com/path1",
+            "vd007": "https://an-api-007.example7an.com/path1",
+            "vd008": "https://an-api-008.example8an.com/path1",
+            "vd009": "https://an-api-009.example9an.com/path1",
+            "vd010": "https://an-api-010.example10an.com/path1"
+        },
+        "TYPE1_WEBSOCKET_URLS": {
+            "vd002": "wss://an-ws-002.example2an.com/path1",
+            "vd003": "wss://an-ws-003.example3an.com/path1",
+            "vd004": "wss://an-ws-004.example4an.com/path1",
+            "vd006": "wss://an-ws-006.example6an.com/path1",
+            "vd007": "wss://an-ws-007.example7an.com/path1",
+            "vd008": "wss://an-ws-008.example8an.com/path1",
+            "vd009": "wss://an-ws-009.example9an.com/path1",
+            "vd010": "wss://an-ws-010.example10an.com/path1"
+        },
+        "TYPE2_API_URLS": {
+            "vd002": "https://an-api-002.example2an.com/path2",
+            "vd003": "https://an-api-003.example3an.com/path2",
+            "vd004": "https://an-api-004.example4an.com/path2",
+            "vd006": "https://an-api-006.example6an.com/path2",
+            "vd007": "https://an-api-007.example7an.com/path2",
+            "vd008": "https://an-api-008.example8an.com/path2",
+            "vd009": "https://an-api-009.example9an.com/path2",
+            "vd010": "https://an-api-010.example10an.com/path2"
+        },
+        "TYPE2_WEBSOCKET_URLS": {
+            "vd002": "wss://an-ws-002.example2an.com/path2",
+            "vd003": "wss://an-ws-003.example3an.com/path2",
+            "vd004": "wss://an-ws-004.example4an.com/path2",
+            "vd006": "wss://an-ws-006.example6an.com/path2",
+            "vd007": "wss://an-ws-007.example7an.com/path2",
+            "vd008": "wss://an-ws-008.example8an.com/path2",
+            "vd009": "wss://an-ws-009.example9an.com/path2",
+            "vd010": "wss://an-ws-010.example10an.com/path2"
+        },
+        "BE_URLS": {
+            "vd002": "https://an-be-002.example2an.com",
+            "vd003": "https://an-be-003.example3an.com",
+            "vd004": "https://an-be-004.example4an.com",
+            "vd006": "https://an-be-006.example6an.com",
+            "vd007": "https://an-be-007.example7an.com",
+            "vd008": "https://an-be-008.example8an.com",
+            "vd009": "https://an-be-009.example9an.com",
+            "vd010": "https://an-be-010.example10an.com"
+        },
+        "FE_URLS": {
+            "vd002": "https://an-fe-002.example2an.com",
+            "vd003": "https://an-fe-003.example3an.com",
+            "vd004": "https://an-fe-004.example4an.com",
+            "vd006": "https://an-fe-006.example6an.com",
+            "vd007": "https://an-fe-007.example7an.com",
+            "vd008": "https://an-fe-008.example8an.com",
+            "vd009": "https://an-fe-009.example9an.com",
+            "vd010": "https://an-fe-010.example10an.com"
+        }
+    }
+}
+
