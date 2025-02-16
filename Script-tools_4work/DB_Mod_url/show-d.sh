@@ -76,6 +76,7 @@ for vid in {{1..4},{6..9},12} ; do
 ###Main###
 
  > show-output
+[ -d ./tmp ] || mkdir ./tmp
 rm -f ./tmp/*
 
 case $1 in
