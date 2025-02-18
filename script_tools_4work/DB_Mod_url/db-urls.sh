@@ -1,12 +1,14 @@
 #!/bin/bash
 #Usage: bash db-urls.sh [業主數字代號] [要3個一次跑，可以多帶個all參數]
 
-mycnf="./my.cnf"
+DIR=$(dirname "$(readlink -f "$0")")
+
+mycnf="$DIR/my.cnf"
 
 [ "$#" == "0" ] && echo "Usage: bash db-urls.sh [業主數字代號] [要3個一次跑，可以多帶個all參數]" && exit
 
 GR='\033[0;32m';RD='\033[0;31m';NC='\033[0m'
-bdjson="cf-domain.json"
+bdjson="$DIR/cf-domain.json"
 
 
 if [[ $1 =~ ^[1-9]$ ]]; then
@@ -257,7 +259,7 @@ case $config in
 esac
 }
 
-#####Main#####
+#=====MAIN=====#
 
 rm -f *URLS
 [[ -e dburls.sql ]] && rm -f dburls.sql
@@ -265,18 +267,18 @@ rm -f *URLS
 if [ "$2" == "all" ]; then 
     for cf in {wap,ios,an} ; do 
         echo -e "$cf\n" | main-dm $1 
-        #chkdomain &
+        chkdomain &
         show_spinner
         rm -f *URLS
     done
 else
     main-dm $1
-    #chkdomain &
+    chkdomain &
     show_spinner
     rm -f *URLS
 fi
 
-#####Main-update DB#####
+#=====Main_Update_DB=====#
 
 read -p "Do you need DB SQL ? (y/n): " dbupdate
 

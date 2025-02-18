@@ -1,4 +1,4 @@
-::在Windows上設定工作排程器，用來定時開關AWS上的特定EC2機器
+::配合在Windows上設定工作排程器，用來定時開關AWS上的特定EC2機器
 
 ::開機
 @echo off

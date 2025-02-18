@@ -1,7 +1,9 @@
 #!/bin/bash
 
-mycnf="./my.cnf"
-d_file="./show-output"
+DIR=$(dirname "$(readlink -f "$0")")
+
+mycnf="$DIR/my.cnf"
+d_file="$DIR/show-output"
 
 if [[ $1 =~ ^[1-9]$ ]]; then
     vd=vd00$1
@@ -50,7 +52,7 @@ EOF
 )
 }
 
-###main###
+#=====MAIN=====#
 
 o_n_domain
 DB_SQL

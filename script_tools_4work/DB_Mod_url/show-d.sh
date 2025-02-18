@@ -1,6 +1,8 @@
 #!/bin/bash
 
-mycnf="./my.cnf"
+DIR=$(dirname "$(readlink -f "$0")")
+
+mycnf="$DIR/my.cnf"
 
 vdchk(){
 if [[ $1 =~ ^[1-9]$ ]]; then
@@ -41,17 +43,17 @@ appoint(){
 for vid in $@ ; do 
     vdchk $vid
     DB_SQL
-    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sql" > ./tmp/url.tmp
-    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sqls" > ./tmp/urls.tmp
+    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sql" > $DIR/tmp/url.tmp
+    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sqls" > $DIR/tmp/urls.tmp
     echo -e "===$vd-url==="
     awk 'NR > 1 { 
             split($2, arr, "/"); 
             split(arr[3], domain_parts, "."); 
             top_domain = domain_parts[length(domain_parts)-1] "." domain_parts[length(domain_parts)]; 
             print $1, top_domain 
-        }' ./tmp/url.tmp 
+        }' $DIR/tmp/url.tmp 
     echo -e "===$vd-urls==="
-    cat ./tmp/urls.tmp  | tr ' ' '\n' | sed '/^$/d' | grep -Po "(?<=api\.|dcdn\.).*(?=/)" 
+    cat $DIR/tmp/urls.tmp  | tr ' ' '\n' | sed '/^$/d' | grep -Po "(?<=api\.|dcdn\.).*(?=/)" 
  done >> show-output
 }
 
@@ -59,25 +61,24 @@ all(){
 for vid in {{1..4},{6..9},12} ; do 
     vdchk $vid
     DB_SQL
-    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sql" > ./tmp/url.tmp
-    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sqls" > ./tmp/urls.tmp
+    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sql" > $DIR/tmp/url.tmp
+    mysql --defaults-file="$mycnf" -h $VID-mysql-db.domain -e "$sqls" > $DIR/tmp/urls.tmp
     echo -e "===$vd-url==="
     awk 'NR > 1 { 
             split($2, arr, "/"); 
             split(arr[3], domain_parts, "."); 
             top_domain = domain_parts[length(domain_parts)-1] "." domain_parts[length(domain_parts)]; 
             print $1, top_domain 
-        }' ./tmp/url.tmp 
+        }' $DIR/tmp/url.tmp 
     echo -e "===$vd-urls==="
-    cat ./tmp/urls.tmp  | tr ' ' '\n' | sed '/^$/d' | grep -Po "(?<=api\.|dcdn\.).*(?=/)" 
+    cat $DIR/tmp/urls.tmp  | tr ' ' '\n' | sed '/^$/d' | grep -Po "(?<=api\.|dcdn\.).*(?=/)" 
  done >> show-output
 }
 
-###Main###
+#=====MAIN=====#
 
  > show-output
-[ -d ./tmp ] || mkdir ./tmp
-rm -f ./tmp/*
+[ -d $DIR/tmp ] && rm -f $DIR/tmp/* || mkdir $DIR/tmp
 
 case $1 in
     all)
@@ -90,7 +91,7 @@ case $1 in
         ;;
 esac
 
-rm -f ./tmp/*
+rm -f $DIR/tmp/*
 
 echo -e "please check file : show-output\n-----------\n"
 
