@@ -1,16 +1,16 @@
 #!/bin/bash
-cd /root/openvpn
-rm -f *.ovpn passwd
-rm -rf openvpn-data
-bash /root/pass-gene > /root/openvpn/passwd
+DIR=$(dirname "$(readlink -f "$0")")
+rm -f $DIR/*.ovpn $DIR/passwd
+rm -rf $DIR/openvpn-data
+bash /root/pass-gene.sh > $DIR/passwd
 
-docker-compose run --rm ${services_name} ovpn_genconfig -u udp://${ip}
-docker-compose run --rm ${services_name} ovpn_genconfig -e 'duplicate-cn'
+docker compose run --rm ${SRV_NM} ovpn_genconfig -u udp://${IP}
+docker compose run --rm ${SRV_NM} ovpn_genconfig -e 'duplicate-cn'
 
-expect ./expt.sh
+expect $DIR/ovpn_init.expt
 
-docker-compose run --rm ${services_name} ovpn_getclient "$CLIENTNAME" > "$CLIENTNAME.ovpn"
+docker compose run --rm ${SRV_NM} ovpn_getclient "$CLIENTNAME" > "$CLIENTNAME.ovpn"
 
-sed -i -e "s/remote ${ip} 1194 udp/remote ${ip} your-port udp/" openvpn.ovpn
+sed -i -e "s/remote ${IP} 1194 udp/remote ${IP} ur-port udp/" $CLIENTNAME.ovpn
 
-docker-compose up -d ${services_name}
+docker compose up -d ${SRV_NM}
