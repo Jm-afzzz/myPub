@@ -1,5 +1,5 @@
 # myPub
-## DockerizePyWeb-crawler
+## DockerizePyWebCrawler
 This project aims to run Python Web-crawler on multiple containers simultaneously using Docker.
 From building image, running container to setting EC2 by template and remote controlling.
 
