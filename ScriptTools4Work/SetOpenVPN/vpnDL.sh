@@ -15,9 +15,9 @@ for ip in `cat ip.list` ; do
     sleep 5s
     ssh -o StrictHostKeyChecking=no root@$ip -p 22 "echo $nodechk | bash"
 
-    mkdir -p $DIR/download/$ip
-    scp -o StrictHostKeyChecking=no -P 22 root@$ip:/root/openvpn/passwd $DIR/download/$ip/$ip-pwd.txt
-    scp -o StrictHostKeyChecking=no -P 22 root@$ip:/root/openvpn/openvpn.ovpn $DIR/download/$ip/$ip-opvpn.ovpn
+    mkdir -p $DIR/Download/$ip
+    scp -o StrictHostKeyChecking=no -P 22 root@$ip:/root/openvpn/passwd $DIR/Download/$ip/$ip-pwd.txt
+    scp -o StrictHostKeyChecking=no -P 22 root@$ip:/root/openvpn/openvpn.ovpn $DIR/Download/$ip/$ip-opvpn.ovpn
     sleep 2s
 done
 

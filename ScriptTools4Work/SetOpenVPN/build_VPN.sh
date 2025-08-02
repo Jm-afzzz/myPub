@@ -2,7 +2,7 @@
 DIR=$(dirname "$(readlink -f "$0")")
 rm -f $DIR/*.ovpn $DIR/passwd
 rm -rf $DIR/openvpn-data
-bash /root/pass-gene.sh > $DIR/passwd
+bash /root/pass_gene.sh > $DIR/passwd
 
 docker compose run --rm ${SRV_NM} ovpn_genconfig -u udp://${IP}
 docker compose run --rm ${SRV_NM} ovpn_genconfig -e 'duplicate-cn'

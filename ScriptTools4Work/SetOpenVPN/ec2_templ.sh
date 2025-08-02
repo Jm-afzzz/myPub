@@ -19,7 +19,7 @@ bash /root/dkinstall.sh && rm -f /root/dkinstall.sh
 
 apt-get install -y expect
 
-cat > /root/pass-gene.sh <<EOF
+cat > /root/pass_gene.sh <<EOF
 #!/bin/bash
 array=( % \\# \
 a b c d e f g h i j k m n o p q r s t u v w x y z \
@@ -91,7 +91,7 @@ send "\$password\n"
 interact
 EOF
 
-cat > /root/openvpn/buildVPN.sh <<EOF
+cat > /root/openvpn/build_VPN.sh <<EOF
 DIR=\$(dirname "\$(readlink -f "\$0")")
 rm -f \$DIR/*.ovpn \$DIR/passwd
 rm -rf \$DIR/openvpn-data

@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# create home dir for ubuntu
 mkdir /home/ubuntu
+
+# put in the script for installing docker and execute
 cat > /home/ubuntu/dkinstall.sh <<EOF
 sudo apt-get update
 sudo apt-get install -y git ca-certificates curl
@@ -18,6 +21,7 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 EOF
 bash /home/ubuntu/dkinstall.sh
 
+# put in the script for pulling the image from dockerHub and execute
 cat > /home/ubuntu/dkpull.sh <<EOF
 echo 'xxxxxxxxxxx' > /home/ubuntu/dk-pwd.txt
 cat /home/ubuntu/dk-pwd.txt | docker login --username usr --password-stdin
@@ -25,6 +29,7 @@ sudo docker pull dockerhub/img-name:tag
 EOF
 bash /home/ubuntu/dkpull.sh
 
+# put in the script for running the container and logging the start-up result 
 cat > /home/ubuntu/run-vrycdpy.sh <<EOF
 #!/bin/bash
 
