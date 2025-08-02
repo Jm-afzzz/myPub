@@ -50,7 +50,7 @@ EX:
 
 bash db_urls [業主數字代號] [wap、ios、an，3個一次跑，可以帶個all參數] [esa 或是 esaicp ]
 ex : bash db_urls 2 all esa > 覆寫esa URLS線路 config為 x、51x、52x、50x77、51x77、52x77
-ex : bash db_urls 2 all esaicp > 覆寫esaicp URLS線路 config為 4xx、41x、42x
+ex : bash db_urls 2 all esaicp > 覆寫esaicp URLS線路 config為 4xx、41x、42x、3xx、31x、32x
 
 確認語法內容無誤後，請下下列指令，便會先備份table再更新DB
 bash urls_update.txt
